@@ -8,6 +8,7 @@ namespace Tateti_ISP20
 {
     public class Juego
     {
+        // es una propiedad de tipo Tablero que es llamado tablero
         private Tablero tablero;
         private Jugador jugador1;
         private Jugador jugador2;
@@ -56,10 +57,12 @@ namespace Tateti_ISP20
                 SeleccionarFicha(jugador_actual);
             }
             return ficha_a_mover;
+            // retorna el ficha a mover
         }
         public void Jugar(int jugador, int nroficha, int pos_elegida)
         {
             // almacenamos en cada uno de los jugadores las posiciones elegidas
+            // si jugador es igual a 1
             if ( jugador == 1)
                 jugador1.fichas[nroficha] = pos_elegida ;
             else
